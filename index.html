@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Максим Катышев">
+    <meta name="description" content="Магазин шестёрочка">
+    <meta name="keywords" content="магазин, шестёрочка, товары, 11.11">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color:goldenrod;">Шестёрочка</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Картинки</a></li>
+                <li><a href="#video">Видео</a></li>
+                <li><a href="#audio">Аудио</a></li>
+                <li><a href="#table">Таблица</a></li>
+                <li><a href="#form">Форма</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="images" id="images">
+            <h2>Картинки</h2>
+            <img class="product__image" src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-13/658/661/161/026/330/100060936364b0.png" height="100px" width="100px" alt="">
+            <img class="product__image" src="https://pyaterochka-isa.ru/img/items/bulochka-kolomenskoe-sdobnaya-100g-art-437626.jpg" height="100px" width="100px" alt="">
+        </section>
+        <br>
+        <section class="video" id="video">
+            <h2>Видео</h2>
+            <video src="promo.mp4" controls height="400" ></video>
+        </section>
+        <section class="audio" id="audio">
+            <h2>Аудио</h2>
+            <audio src="audio.mp3" controls> </audio>
+        </section>
+        <section class="table" id="table">
+            <h2>Таблица</h2>
+            <table id="product__table">
+                <caption>цены товаров</caption>
+                <tr>
+                    <th>Название</th>
+                    <th>Цена(Р)</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>Булочка с присыпкой</td>
+                    <td>100</td>
+                    <td>булочка очень вкусная</td>
+                </tr>
+                <tr>
+                    <td>Булочка молочная</td>
+                    <td>125</td>
+                    <td>булочка свежая и мягкая</td>
+                </tr>
+            </table>
+            
+        </section>
+        <section class="form" id="form">
+            <h2>Форма</h2>
+            <form>
+                <label for="name">
+                    Имя: 
+                </label>
+                <input name="name" id="name" type="text" placeholder="Иван Иванович">
+                <br><br>
+                <label for="email">
+                    Почта:
+                </label>
+                <input name="email" id="email" type="text" placeholder="example@example.com">
+                <br><br>
+                <label for="message">Собщение: </label>
+                <textarea name="message" id="message"></textarea>
+                <br><br>
+                <label for="messagetype">Оценка:</label>
+                <select id="messagetype" name="messagetype">
+                    <option value="product">Качество товара</option>
+                    <option value="site">Сайт</option>
+                    <option value="cost">Цена товара</option>
+                </select>
+                <br><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>©шестерочка все права защищены</h3>
+    </footer>
+</body>
+</html>
